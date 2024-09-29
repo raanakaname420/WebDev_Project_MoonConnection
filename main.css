@@ -6,6 +6,8 @@
     border-color: pink;
     border-width: 10px;
     margin:auto;
+    position: sticky;
+    top: 0;
 }
 
 h1 {
@@ -27,7 +29,6 @@ h1 {
     background-color: beige;
 }
   
-  /* Clearfix (clear floats) */
 .row::after {
     content: "";
     clear: both;
@@ -40,16 +41,52 @@ h1 {
     padding: 5px;
 }
 
-.popular_anime{
-    height: 220px;
-    margin-right: 6px;
-    width: 160px;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    background-color: #e92085;
+    padding: 10px;
+    column-gap: 25px;
+    width: 875px;
 }
 
-.test {
-    display: block;
-    margin-top: 4px;
-    overflow: hidden;
-    position: relative;
-    width: 720px;
-  }
+.grid-item {
+    font-size: 15px;
+    padding: 5px;
+    float: left;
+}
+
+.split {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    z-index: 0;
+    top: 124px;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-color: black;
+    border-width: 2px;
+}
+
+.left {
+    left: 0;
+    background-color: #111;
+}
+  
+  .right {
+    right: 8px;
+    background-color: gray;
+
+    font-style: centered;
+}
+
+.footer{
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: pink;
+    color: black;
+    text-align: center;
+}
