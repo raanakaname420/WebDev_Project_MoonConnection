@@ -1,0 +1,81 @@
+h2{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: left;
+    color: #000000;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 1px;
+    font: 'Courier New', Courier, monospace;
+    
+}
+h4{
+    vertical-align: top;
+    font-size: 20px;
+}
+
+p{
+    font-size: 16px;
+}
+
+body{
+    background-color: #ebedec;
+    font-family:'Courier New', Courier, monospace ;
+    text-align: center;    
+}
+
+p2{
+  font-size: 18px ;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    
+
+}
+
+
+.contactMeText{
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.contactDetails{
+text-align: center;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+a:-webkit-any-link {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+/*Tyr banner and stuff*/
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    width: 100%;
+    justify-content: space-around;
+    height: 60px;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.column {
+    text-align: center;
+    background-color: beige;
+}
+  
+
