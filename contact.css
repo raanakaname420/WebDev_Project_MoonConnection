@@ -32,8 +32,6 @@ p2{
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
-    
-
 }
 
 
@@ -44,6 +42,7 @@ p2{
     margin-left: 100px;
     margin-right: 100px;
 }
+
 .contactDetails{
 text-align: center;
 margin-left: 50px;
@@ -54,28 +53,59 @@ a:-webkit-any-link {
     color: #000000;
     cursor: pointer;
     text-decoration: none;
-
 }
 
 /*Tyr banner and stuff*/
 .banner {
-    display: flex;
-    align-items: center;
+    width:auto;
+    height: 95px;
+    border: solid; 
     background-color: pink;
-    width: 100%;
-    justify-content: space-around;
-    height: 60px;
-
+    border-color: pink;
+    border-width: 10px;
+    margin:auto;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 h1 {
+    border-right-style: solid;
+    border-width: 5px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.box {
+    box-sizing: border-box;
+}
 
 .column {
-    text-align: center;
+    float: right;
+    width: 10%;
+    padding: 5px;
     background-color: beige;
+}
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column2 {
+    float: left;
+    width: 10%;
+    padding: 5px;
+}
+
+.footer{
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: pink;
+    color: black;
+    text-align: center;
 }
   
 
