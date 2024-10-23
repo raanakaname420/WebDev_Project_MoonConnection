@@ -4,7 +4,7 @@ h1 {
     border-width: 5px;
     text-align: center;
     -webkit-text-stroke-width: 1px;
-    font-family:'Courier New', Courier, monospace ;
+    font-family: 'Courier New', Courier, monospace;
     color: white;
 }
 
@@ -16,14 +16,14 @@ h2{
     color: white;
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 1px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: optima;  
 }
 
 
-p{
+p2{
+    font-size: 18px;
     color: white;
-    -webkit-text-stroke-width: 1px;
-    font-family:'Courier New', Courier, monospace ;
+    line-height: 13px;
 }
 
 
@@ -58,5 +58,5 @@ margin-right: 50px;
     background-color: pink;
     color: black;
     text-align: center;
-    z-index: 0;
+    z-index: 1;
 }

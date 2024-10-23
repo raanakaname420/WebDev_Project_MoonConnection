@@ -1,3 +1,10 @@
+body{
+    background-color: #ebedec;
+    font-family:'Courier New', Courier, monospace ;
+    text-align: center;    
+    color: white;
+}
+
 h2{
     font-weight: bold;
     font-size: 40px;
@@ -6,29 +13,31 @@ h2{
     color: white;
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 1px;
-    font: 'Courier New', Courier, monospace;
-    
+    font-family: optima;    
 }
 
 h4{
     vertical-align: top;
-    font-size: 20px;
-    letter-spacing: 3px;
+    font-size: 23px;
+    letter-spacing: 5px;
+    font-family: optima;
 }
 
 p{
     font-size: 16px;
 }
 
-body{
-    background-color: #ebedec;
-    font-family:'Courier New', Courier, monospace ;
-    text-align: center;    
-    color: white;
+.contact-details-text{
+    font-family: optima;
+    letter-spacing: 3px;
+    font-weight: bold; 
+    text-decoration: underline;
 }
 
 p2{
-  font-size: 18px ;
+  font-size: 18px;
+  text-align: center;
+    line-height: 30px;
 }
 
 .grid-container{
