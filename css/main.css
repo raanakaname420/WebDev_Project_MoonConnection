@@ -121,18 +121,19 @@ h2{
 .section-item img{
     margin: auto;
     display: block;
-    padding-right: 30px;
     padding-top: 25px;
 }
 
 .section-item p{
     text-align: center;
-    padding-right: 35px ;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .left {
     left: 0;
     background-color: #111;
+
 }
   
 .right {
