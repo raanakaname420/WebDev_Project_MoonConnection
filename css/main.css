@@ -8,17 +8,18 @@ h2{
     font-family: optima;
 
 }
+
+
 .box {
     box-sizing: border-box;
 }
+
 
 .column {
     float: right;
     padding: 5px;
 }
   
-
-
 
 .grid-container {
     display: grid;
@@ -46,7 +47,6 @@ h2{
     padding-top:10px ;
     margin: auto;
     display: block;
-
 }
 
 
