@@ -17,24 +17,7 @@ h2{
     padding: 5px;
 }
   
-.row {
-    content: "";
-    width: 60%;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    align-items: center;
-    float: right;
-}
 
-.column2 {
-    display: grid;
-    float: left;
-    width: 30%;
-    height: 95px;
-    padding: 5px;
-    grid-template-columns: 20% 80%;
-    align-items: center;
-}
 
 
 .grid-container {
