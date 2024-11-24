@@ -9,10 +9,28 @@
     border-radius: 25px;
 }
 
+<<<<<<< Updated upstream
+=======
+h3{
+    color: #fff;
+}
+
+label{
+    color: #fff;
+}
+
+>>>>>>> Stashed changes
 .important {
     color: red;
 }
 
+<<<<<<< Updated upstream
+=======
+form#payment{
+    color: #fff;
+}
+
+>>>>>>> Stashed changes
 /* Popup container */
 .popup {
     position: relative;
