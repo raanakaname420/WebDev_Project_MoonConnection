@@ -12,8 +12,20 @@ h2{
 
 }
 
-p{
+h3{
+    font-family: optima;
     color: white;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+p1{
+    color: white;
+}
+
+p2{
+    color: white;
+    font-size: 14px;
 }
 
 #recentBlog{
@@ -21,7 +33,8 @@ p{
     grid-template-columns: 60% 40%;
     width: 100%;
     padding-top: 0px;
-
+    padding-bottom: 20px;
+    
 }
 
 .blogCover{
@@ -35,9 +48,14 @@ p{
     text-align: left;
     padding-right: 30px;
     padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#prevBlogs{
+.prevBlogs{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 15% 85%;
+    height: 30%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.732);
 }
