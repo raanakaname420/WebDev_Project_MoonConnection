@@ -104,6 +104,7 @@ h2{
     top: 14%;
     overflow-x: hidden;
     z-index: 1;
+    color: white;
 }
 
 .section-item{
