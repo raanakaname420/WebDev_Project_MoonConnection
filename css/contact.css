@@ -62,7 +62,46 @@ margin-right: 50px;
 }
 
 
+/*for tablet screens*/
+@media only screen and (max-width: 1024px){
 
+
+    h2{
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 10px;
+        text-align: left;
+        color: white;
+        -webkit-text-stroke-color: #000000;
+        -webkit-text-stroke-width: 1px;
+        font-family: optima;    
+        padding-top: 100px;
+    }
+    
+    p2{
+        font-size: 22px;
+        text-align: center;
+          line-height: 30px;
+      }
+
+
+      p{
+        font-size: 20px;
+    }
+
+    h4{
+        vertical-align: top;
+        font-size: 27px;
+        letter-spacing: 5px;
+        font-family: optima;
+    }
+
+
+    .grid-container{
+        display: block;
+        align-items: center;
+    }
+}
 
 
 

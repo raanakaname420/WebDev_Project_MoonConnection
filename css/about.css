@@ -60,3 +60,21 @@ margin-right: 50px;
     text-align: center;
     z-index: 1;
 }
+
+/*for tablet screens*/
+@media only screen and (max-width: 1024px){
+    .grid-container{
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sofiaPicture{
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        padding-left: 0px;
+        padding-top: 100px;
+                
+    }
+}

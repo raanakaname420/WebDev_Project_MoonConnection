@@ -4,6 +4,8 @@
 
 }
 
+
+
 h2{
     font-family: optima;
     color: white;
@@ -58,4 +60,68 @@ p2{
     height: 30%;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(153, 153, 153, 0.732);
+}
+
+/*for tablet screens*/
+@media only screen and (max-width: 1024px){
+    #backgroundDim{
+        background-color: rgb(0,0,0,60%);
+    
+    }
+    
+    h2{
+        font-family: optima;
+        color: white;
+        letter-spacing: 6px;
+        font-size: 32px;
+    
+    }
+    
+    h3{
+        font-family: optima;
+        color: white;
+        letter-spacing: 4px;
+        font-size: 20px;
+    }
+    
+    p1{
+        color: white;
+    }
+    
+    p2{
+        color: white;
+        font-size: 14px;
+    }
+    
+    #recentBlog{
+        display:block;
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        
+    }
+    
+    .blogCover{
+        padding-left: 20px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    
+    }
+    
+    .blogText{
+        text-align: left;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .prevBlogs{
+        display: grid;
+        grid-template-columns: 15% 85%;
+        height: 30%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(153, 153, 153, 0.732);
+    }
+    
 }
