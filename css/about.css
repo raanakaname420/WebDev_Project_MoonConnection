@@ -77,4 +77,14 @@ margin-right: 50px;
         padding-top: 100px;
                 
     }
+
+    .aboutMeText{
+        text-align: center;
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+
+    p2{
+        font-size: 20px;
+    }
 }
