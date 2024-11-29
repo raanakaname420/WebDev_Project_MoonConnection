@@ -144,17 +144,7 @@ h2{
     font-style: centered;
 }
 
-.footer{
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(80, 34, 75);
-    color: white;
-    text-align: center;
-    z-index: 2;
 
-}
 
 /*for tablet screens*/
 @media only screen and (max-width: 1024px){
@@ -166,6 +156,7 @@ h2{
         padding-left: 20px;
         font-family: optima;
         padding-top: 30px;
+        font-size: 30px;
     
     }
 
