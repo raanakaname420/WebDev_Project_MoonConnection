@@ -104,8 +104,9 @@ a:hover{
 .footer{
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0%;
     width: 100%;
+    height: 20px;
     background-color: rgb(80, 34, 75);
     color: white;
     text-align: center;
@@ -114,6 +115,11 @@ a:hover{
 
 p3{
     font-size: 14px;
+}
+
+#page_container{
+    position: relative;
+    min-height: 100vh;
 }
 
 /*for tablet screens*/

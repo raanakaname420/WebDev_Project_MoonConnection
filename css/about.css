@@ -30,34 +30,25 @@ p2{
 .grid-container{
     display: grid;
     grid-template-columns: 30% 70%;
-    align-items: center;
     width: 100%;
-    vertical-align: middle;
+    align-items: center;
 }
 
 .sofiaPicture{
     text-align: left;
     align-items: left;
-    vertical-align: middle;
     padding-left: 40px;
     padding-top: 40px;
     
 }
 
 .aboutMeText{
-text-align: center;
-margin-left: 50px;
-margin-right: 50px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.footer{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-}
+
 
 /*for tablet screens*/
 @media only screen and (max-width: 1024px){

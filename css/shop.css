@@ -1,10 +1,4 @@
 
-
-.box {
-    box-sizing: border-box;
-}
-
-
 .grid-container {
     display: grid;
     grid-template-columns: 15% 15% 15% 15% 15% 13%;
@@ -29,8 +23,11 @@
 }
 
 .grid-item img{
+    padding-top:10px ;
     margin: auto;
     display: block;
+    width: 160px;
+    height: 220px;
 }
 
 .split {
@@ -48,6 +45,8 @@
     cursor: pointer;
     padding-bottom: 5px;
     transition: background-color 0.3s;
+    align-content: center;
+
 }
 
 .section-item:hover{
