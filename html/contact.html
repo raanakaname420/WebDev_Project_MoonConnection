@@ -7,42 +7,52 @@
     <title>Contact</title>
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/all.css">
+    <link rel="script" href="../javascript/contact.js">
 
 </head>
 
-    <body>
-        <div class="banner">
-            <div class="column2">
-                <div class="logo-pic">
-                    <a href="../index.html" alt="link to homepage">
-                        <img src="../images/animeHavenLogo.png">
-                    </a>
-                </div>
-                <div class="logo-name">
-                    <a href="../index.html" alt="link to homepage">
-                        <div style="display: flex; justify-content: space-between;">
-                            <img src="../images/animeHavenName.png">
-                        </div>
-                    </a>
-                </div>
-            </div>
+<body>
 
-            <div class="row">
-                <div class="column">
-                    <h1><a href="../html/shop.html" alt="link to shop page">Shop</a></h1>
-                </div>
-                <div class="column">
-                    <h1><a href="../html/about.html" alt="link to about page">About</a></h1>
-                </div>
-                <div class="column">
-                    <h1><a href="../html/blog.html" alt="link to blog page">Blog</a></h1>
-                </div>
-                <div class="column">
-                    <h1><a href="../html/contact.html" alt="link to contact page">Contact</a></h1>
-                </div>
+    <script>
+        // When the user clicks on <div>, open the popup
+        function popupFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+    <div class="banner">
+        <div class="column2">
+            <div class="logo-pic">
+                <a href="../index.html" alt="link to homepage">
+                    <img src="../images/animeHavenLogo.png">
+                </a>
+            </div>
+            <div class="logo-name">
+                <a href="../index.html" alt="link to homepage">
+                    <div style="display: flex; justify-content: space-between;">
+                        <img src="../images/animeHavenName.png">
+                    </div>
+                </a>
             </div>
         </div>
-        
+
+        <div class="row">
+            <div class="column">
+                <h1><a href="../html/shop.html" alt="link to shop page">Shop</a></h1>
+            </div>
+            <div class="column">
+                <h1><a href="../html/about.html" alt="link to about page">About</a></h1>
+            </div>
+            <div class="column">
+                <h1><a href="../html/blog.html" alt="link to blog page">Blog</a></h1>
+            </div>
+            <div class="column">
+                <h1><a href="../html/contact.html" alt="link to contact page">Contact</a></h1>
+            </div>
+        </div>
+    </div>
+
     <div id="page_container">
         <br>
         <br>
@@ -50,12 +60,56 @@
         <br>
         <div class="grid-container"> <!--container with 2 colums for text and contact details-->
             <div class="contactMeText">
-                <p2>If you have any questions or requests please feel free to contact me! I want my website to be both
-                    fun and informative, so I will be more than happy to talk to you guys and help you out with any
-                    questions or suggestions you
-                    might have regarding anything that might come up. You guys are my highest priority, I hope all of
-                    you have a good experience
-                    on this website and in this community <br> &lt;3 </p2>
+                <h4>Send me a Message!</h4>
+
+                <form name="contactName" action="" onsubmit="return validateName()" method="post">
+                    <label for="fullname">Full name:<span class="important">*</span></label><br>
+                    <input type="text" id="fullname" name="fullname" size="60" required><br>
+                    <input type="submit" value="Save details">
+
+                </form>
+
+                    <br>
+
+                <form name="contactEmail" action="" onsubmit="return validateEmail()" method="post">
+                    <label for="email">Email address:</label><br>
+                    <input type="email" id="email" name="email" size="75" required><br>
+                    <input type="submit" value="Save details">
+                </form>
+
+                    <br>
+
+                <form name="contactPhone" action="" onsubmit="return validatePhone()" method="post">
+                    <label for="phoneNumber">Phone Number:</label><br>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" size="12" required><br>
+                    <input type="submit" value="Save details">
+                </form>
+
+                    <br><br>
+
+                    <p>Prefered Contact Method<span class="important">*</span></p>
+                    <form name="contactMethod" id="contactMethod">
+                        Select: <select name="contactMethod" id="contactMethod" required>
+                            <option value="" selected="selected">Please select one</option>
+                            <option value="" selected="selected">Email</option>
+                            <option value="" selected="selected">Phone</option>
+                            <option value="" selected="selected">None</option>
+                        </select>
+
+
+                    <form name="contactMessage" action="" onsubmit="return validateMessage()" method="post">
+                        <p>Message:</p>
+                        <textarea id="Message" name="Message" rows="5" cols="65" required></textarea>
+                        <input type="submit" value="Save details">
+                    </form>
+
+
+                        <br><br><br>
+
+                        <div class="popup" onclick="popupFunction()"><input type="submit" value="Submit">
+                            <span class="popuptext" id="myPopup">Details submitted!</span>
+                        </div>
+
             </div>
 
             <!--<a href="https://www.freepik.com/search">Icon by Freepik</a>2-->
@@ -83,10 +137,10 @@
         <br>
         <br>
         <footer class="footer">
-                <p3>Made by MoonConnection for Sofia Martinez.</p3>
+            <p3>Made by MoonConnection for Sofia Martinez.</p3>
         </footer>
     </div>
 
-    </body>
+</body>
 
 </html>
