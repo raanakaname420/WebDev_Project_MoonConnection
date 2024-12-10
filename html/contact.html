@@ -57,42 +57,40 @@
                 <form name="contactForm" action="" method="post" onsubmit="return validateForm()">   
 
                     <label for="fullname">Full name:<span class="important">*</span></label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" size="60"><br>
+                    <input type="text" id="fullname" name="fullname" placeholder=" Your full name" size="60"><br>
                     <br>
 
                 
 
                     <br>
-                    <br>
 
                     <label for="email">Email address:<span class="important">*</span></label>
-                    <input type="text" id="email" name="email" placeholder="4example@gmail.com" size="75" >
+                    <input type="text" id="email" name="email" placeholder=" 4example@gmail.com" size="75" >
                     <br><br>
 
                     <br>
-                    <br>
 
                     <label for="phoneNumber">Phone Number:<span class="important">*</span></label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123456789" size="26" >
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder=" 123456789" size="26" >
                     <br><br>
 
 
                     <p>Prefered Contact Method<span class="important">*</span></p>
                     Select: <select name="contactMethod" id="contactMethod"> 
-                            <option value="" selected="selected">Please select one</option>
                             <option value="email" selected="selected">Email</option>
                             <option value="phone" selected="selected">Phone</option>
                             <option value="none" selected="selected">None</option>
+                            <option value="" selected="selected">Please select one</option>
                         </select>
 
                         <br><br>
                         <p>Your Message:<span class="important">*</span></p>
-                        <textarea id="message" name="message" placeholder="Type your message here..." rows="5" cols="65" ></textarea>
+                        <textarea id="message" name="message" placeholder=" Type your message here..." rows="5" cols="65" ></textarea>
 
 
-                        <br><br><br>
+                        <br><br>
 
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit">
              </form>
             </div>
 
