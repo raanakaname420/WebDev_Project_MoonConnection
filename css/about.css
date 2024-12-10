@@ -55,25 +55,33 @@ p2{
     .grid-container{
         display: block;
         align-items: center;
-        width: 100%;
+
     }
 
     .sofiaPicture{
-        text-align: center;
-        align-items: center;
-        vertical-align: middle;
+        padding-top: 50px;
         padding-left: 0px;
-        padding-top: 100px;
-                
+        text-align: center;
     }
 
     .aboutMeText{
         text-align: center;
-        margin-left: 130px;
-        margin-right: 130px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     p2{
         font-size: 20px;
+    }
+    .footer{
+        position: static;
+        left: 0;
+        bottom: 0%;
+        width: 100%;
+        height: 20px;
+        background-color: rgb(80, 34, 75);
+        color: white;
+        text-align: center;
+        z-index: 2;
     }
 }

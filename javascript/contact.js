@@ -21,8 +21,13 @@ function validateForm() {
         return false;
     }
     // if all validations pass
-    alert("Your message was sent, thank you!");
+    alert("Details submitted, thank you !!");
     return true;
-    
-    }
+  
+}
+
+
+
+
+
 

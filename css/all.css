@@ -139,6 +139,7 @@ p3{
         height: 100%;
         bottom: 0%;
         font-family:'Courier New', Courier, monospace ;
+        padding-top: 11%;
     
     }
 
@@ -151,7 +152,7 @@ p3{
         border-width: 10px;
         margin:auto;
         letter-spacing: 3px;
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 2;
     }
@@ -207,7 +208,7 @@ p3{
     }
 
     .footer{
-        position: absolute;
+        position: static;
         left: 0;
         bottom: 0%;
         width: 100%;
