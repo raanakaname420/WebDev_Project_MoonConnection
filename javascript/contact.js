@@ -1,32 +1,28 @@
 
-function validateName() {
-    let x = document.forms["contactName"]["fullname"].value;
-    if (x == "") {
-        alert("Full name must be filled out.");
-        return false;
-    }
-}
+function validateForm() {
+    // retrieving form values
+    let fullname = document.getElementById("fullname").value;
+    let email = document.getElementById("email").value;
+    let phoneNumber = document.getElementById("phoneNumber").value;
+    let contactMethod = document.getElementById("contactMethod").value;
+    let message= document.getElementById("message").value;
 
-function validateEmail() {
-    let y = document.forms["contactEmail"]["email"].value;
-    if (y == "") {
-        alert("Email must be filled out.");
+    // avoiding blank input
+    if (fullname === "" || email === "" || phoneNumber==="" || message === "" || contactMethod === "") {
+        alert("Please fill out all required fields");
         return false;
     }
-}
 
-function validatePhone() {
-    let z = document.forms["contactPhone"]["phoneNumber"].value;
-    if (z == "") {
-        alert("Phone must be filled out.");
-        return false;
-    }
-}
 
-function validateMessage() {
-    let a = document.forms["contactMessage"]["message"].value;
-    if (a == "") {
-        alert("Message must contain text.");
+    // validating email format using a simple regular expression
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address");
         return false;
     }
-}
+    // if all validations pass
+    alert("Your message was sent, thank you!");
+    return true;
+    
+    }
+

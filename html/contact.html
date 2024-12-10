@@ -7,19 +7,11 @@
     <title>Contact</title>
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/all.css">
-    <link rel="script" href="../javascript/contact.js">
+    <script src="../javascript/contact.js"></script>
 
 </head>
 
 <body>
-
-    <script>
-        // When the user clicks on <div>, open the popup
-        function popupFunction() {
-            var popup = document.getElementById("myPopup");
-            popup.classList.toggle("show");
-        }
-    </script>
 
     <div class="banner">
         <div class="column2">
@@ -62,54 +54,46 @@
             <div class="contactMeText">
                 <h4>Send me a Message!</h4>
 
-                <form name="contactName" action="" onsubmit="return validateName()" method="post">
-                    <label for="fullname">Full name:<span class="important">*</span></label><br>
-                    <input type="text" id="fullname" name="fullname" size="60" required><br>
-                    <input type="submit" value="Save details">
+                <form name="contactForm" action="" method="post" onsubmit="return validateForm()">   
 
-                </form>
-
+                    <label for="fullname">Full name:<span class="important">*</span></label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" size="60"><br>
                     <br>
 
-                <form name="contactEmail" action="" onsubmit="return validateEmail()" method="post">
-                    <label for="email">Email address:</label><br>
-                    <input type="email" id="email" name="email" size="75" required><br>
-                    <input type="submit" value="Save details">
-                </form>
+                
 
                     <br>
+                    <br>
 
-                <form name="contactPhone" action="" onsubmit="return validatePhone()" method="post">
-                    <label for="phoneNumber">Phone Number:</label><br>
-                    <input type="tel" id="phoneNumber" name="phoneNumber" size="12" required><br>
-                    <input type="submit" value="Save details">
-                </form>
-
+                    <label for="email">Email address:<span class="important">*</span></label>
+                    <input type="text" id="email" name="email" placeholder="4example@gmail.com" size="75" >
                     <br><br>
 
+                    <br>
+                    <br>
+
+                    <label for="phoneNumber">Phone Number:<span class="important">*</span></label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123456789" size="26" >
+                    <br><br>
+
+
                     <p>Prefered Contact Method<span class="important">*</span></p>
-                    <form name="contactMethod" id="contactMethod">
-                        Select: <select name="contactMethod" id="contactMethod" required>
+                    Select: <select name="contactMethod" id="contactMethod"> 
                             <option value="" selected="selected">Please select one</option>
-                            <option value="" selected="selected">Email</option>
-                            <option value="" selected="selected">Phone</option>
-                            <option value="" selected="selected">None</option>
+                            <option value="email" selected="selected">Email</option>
+                            <option value="phone" selected="selected">Phone</option>
+                            <option value="none" selected="selected">None</option>
                         </select>
 
-
-                    <form name="contactMessage" action="" onsubmit="return validateMessage()" method="post">
-                        <p>Message:</p>
-                        <textarea id="Message" name="Message" rows="5" cols="65" required></textarea>
-                        <input type="submit" value="Save details">
-                    </form>
+                        <br><br>
+                        <p>Your Message:<span class="important">*</span></p>
+                        <textarea id="message" name="message" placeholder="Type your message here..." rows="5" cols="65" ></textarea>
 
 
                         <br><br><br>
 
-                        <div class="popup" onclick="popupFunction()"><input type="submit" value="Submit">
-                            <span class="popuptext" id="myPopup">Details submitted!</span>
-                        </div>
-
+                        <input type="submit" value="Submit">
+             </form>
             </div>
 
             <!--<a href="https://www.freepik.com/search">Icon by Freepik</a>2-->
