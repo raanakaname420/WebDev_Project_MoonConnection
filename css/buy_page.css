@@ -13,6 +13,10 @@ h3{
     color: #fff;
 }
 
+input{
+    border-radius: 15px;
+}
+
 label{
     color: #fff;
 }
@@ -24,6 +28,37 @@ label{
 form#payment{
     color: #fff;
 }
+
+select{
+    border-radius: 15px;
+}
+
+textarea{
+    border-radius: 15px;
+}
+
+input#submit {
+
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #645f8a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: optima;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 15px;
+    border-color: white;
+}
+
+#submit:hover{
+    background-color: #5d3c76;
+    cursor: pointer;
+}
+
 
 /* Popup container */
 .popup {

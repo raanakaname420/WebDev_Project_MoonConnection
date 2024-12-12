@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/buy_page.css">
+    <script src="../javascript/buy_page.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
@@ -54,74 +55,72 @@
 
         <div class="box">
             <h3>Details</h3>
-
-            <label for="fullname">First and last name:<span class="important">*</span></label><br>
-            <input type="text" id="fullname" name="fullname" size="60" required><br>
+            <form name="buyForm" action="" method="post" onsubmit="return validateForm()">   
+            
+                <label for="fullname">First and last name:<span class="important">*</span></label><br>
+            <input type="text" id="fullname" name="fullname" size="60" ><br>
 
             <br><br>
 
             <label for="address">Address:<span class="important">*</span></label><br>
-            <input type="text" id="address" name="address" size="75" required><br>
+            <input type="text" id="address" name="address" size="75" ><br>
             <label for="address"></label><br>
-            <input type="text" id="address" name="address" size="75" required><br>
+            <input type="text" id="address" name="address" size="75" ><br>
             <label for="address"></label><br>
-            <input type="text" id="address" name="address" size="75"><br>
+            <input type="text" id="address_more" name="address" size="75"><br>
             <label for="address"></label><br>
-            <input type="text" id="address" name="address" size="75"><br>
+            <input type="text" id="address_more" name="address" size="75"><br>
 
             <br><br>
 
             <label for="eircode">Eircode:<span class="important">*</span></label><br>
-            <input type="text" id="eircode" name="eircode" size="10" required><br><br>
+            <input type="text" id="eircode" name="eircode" size="10" ><br><br>
 
             <h3>Payment Method<span class="important">*</span></h3>
-            <form name="payment" id="payment">
-                Select: <select name="payment" id="payment" required>
+                Select: <select name="payment" id="payment" >
+                    <option value="Visa" selected="selected">Visa</option>
+                    <option value="Mastercard" selected="selected">Mastercard</option>
+                    <option value="Paypal" selected="selected">Paypal</option>
                     <option value="" selected="selected">Please select one</option>
-                    <option value="" selected="selected">Visa</option>
-                    <option value="" selected="selected">Mastercard</option>
-                    <option value="" selected="selected">Paypal</option>
+
                 </select>
-            </form>
+            
 
             <br><br><br>
 
-            <form>
+            
                   <input type="radio" id="html" name="fav_language" value="terms&conditions">
                   <label for="terms&conditions">I agree to the <a href="https://www.w3schools.com/">terms and
                         conditions</a>
                     <span class="important">*</span></label><br>
-            </form>
 
             <br><br>
 
-            <div class="popup" onclick="popupFunction()"><input type="submit" value="Submit">
-                <span class="popuptext" id="myPopup">Details submitted!</span>
-            </div>
-            </form>
+            <input id="submit" type="submit" value="Submit">
         </div>
 
 
 
-        <section class="split right">
+        <section class="split right" >
             <h2 style="text-align: center; padding-top: 6px; padding-right: 10px;">Item in Basket</h2>
             <ul class="section-item"><img src="../images/pants.png" width="160" height="220">
                 <p><i>Placeholder Pants</i>: image by MoonConnection, 20£</p>
             </ul>
-            <form name="size" id="size" style="text-align: center;">
+            <div style="text-align: center;">
                 <span class="important">*</span>Select a size: <select name="size" id="size">
+                    <option value="XS" selected="selected">XS</option>
+                    <option value="S" selected="selected">S</option>
+                    <option value="M" selected="selected">M</option>
+                    <option value="L" selected="selected">L</option>
+                    <option value="XL" selected="selected">XL</option>
                     <option value="" selected="selected">Please select one</option>
-                    <option value="" selected="selected">XS</option>
-                    <option value="" selected="selected">S</option>
-                    <option value="" selected="selected">M</option>
-                    <option value="" selected="selected">L</option>
-                    <option value="" selected="selected">XL</option>
                 </select>
+            </div>
                 <br><br>
-                <input type="submit" value="Submit">
-            </form>
+                <!--<input id="submit" type="submit" value="Submit">-->
 
         </section>
+    </form>
 
         <footer>
             <div class="footer">
