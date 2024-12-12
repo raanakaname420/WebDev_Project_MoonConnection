@@ -11,6 +11,18 @@ h2{
 
 p{
     text-align: center;
+    padding-top: 6px;
+    margin-bottom: 2px;
+}
+
+p2{
+    text-align: center;
+    color: #a1a1a1;
+    font-size: 12px;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
 
 .column {
@@ -111,7 +123,8 @@ p{
     cursor: pointer;
     transition: background-color 0.3s;
     align-content: center;
-    margin: 0;
+    padding-bottom: 20px;
+    margin:0;
 }
 
 .section-item:hover{
