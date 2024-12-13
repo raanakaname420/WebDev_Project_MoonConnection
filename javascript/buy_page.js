@@ -5,12 +5,12 @@ function validateForm() {
     let address = document.getElementById("address").value;
     let eircode = document.getElementById("eircode").value;
     let payment = document.getElementById("payment").value;
-    let terms= document.getElementById("html").value;
+    let terms= document.getElementById("html").checked;
     let size= document.getElementById("size").value;
 
 
     // avoiding blank input
-    if (fullname === "" || address === "" || eircode ==="" || payment === "" ||  size === "") {
+    if (fullname === "" || address === "" || eircode ==="" || payment === "" ||  size === "" ||  terms == false) {
         alert("Please fill out all required fields");
         return false;
     }
